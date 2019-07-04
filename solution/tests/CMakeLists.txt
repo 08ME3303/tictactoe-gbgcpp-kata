@@ -1,0 +1,6 @@
+add_executable(tictactoe_tests_solution main_tests_solution.cpp test_tictactoe_solution.cpp)
+target_link_libraries(tictactoe_tests_solution catch2 src_solution)
+set(TARGET tictactoe_tests_solution PROPERTY CXX_STANDARD 17)
+
+enable_testing()
+add_test(NAME tictactoe_tests_solution COMMAND tictactoe_tests_solution)
